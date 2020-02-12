@@ -153,7 +153,7 @@ CONTAINS
     SunRise = 4.5_dp 
     SunSet  = 19.5_dp 
     Thour = TIME/3600.0_dp 
-    Tlocal = Thour - (INT(Thour)/24)*24
+    Tlocal = Thour - (FLOOR(Thour/24))*24
 
     IF ((Tlocal>=SunRise).AND.(Tlocal<=SunSet)) THEN
        Ttmp = (2.0*Tlocal-SunRise-SunSet)/(SunSet-SunRise)

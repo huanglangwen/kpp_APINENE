@@ -42,23 +42,23 @@ MODULE mcm_subset2_Global
 ! RCONST - Rate constants (global)
   REAL(kind=dp) :: RCONST(NREACT)
 ! TIME - Current integration time
-  REAL(kind=dp) :: TIME
+  REAL(kind=dp) :: TIME=43200.0!=12*60*60
 ! SUN - Sunlight intensity between [0,1]
-  REAL(kind=dp) :: SUN
+  REAL(kind=dp) :: SUN=1.0
 ! TEMP - Temperature
-  REAL(kind=dp) :: TEMP=298.0
+  REAL(kind=dp) :: TEMP=298.15
 ! RTOLS - (scalar) Relative tolerance
   REAL(kind=dp) :: RTOLS = 1E-8
 ! TSTART - Integration start time
   REAL(kind=dp) :: TSTART = 0.0
 ! TEND - Integration end time
-  REAL(kind=dp) :: TEND = 3600.0
+  REAL(kind=dp) :: TEND = 10800.0
 ! DT - Integration step
-  REAL(kind=dp) :: DT = 300.0
+  REAL(kind=dp) :: DT = 100.0
 ! ATOL - Absolute tolerance
-  REAL(kind=dp) :: ATOL(NVAR) = 1E-8
+  REAL(kind=dp) :: ATOL(NVAR) = 1E-3
 ! RTOL - Relative tolerance
-  REAL(kind=dp) :: RTOL(NVAR) = 1E-8
+  REAL(kind=dp) :: RTOL(NVAR) = 1E-6
 ! STEPMIN - Lower bound for integration step
   REAL(kind=dp) :: STEPMIN = 1E-8
 ! STEPMAX - Upper bound for integration step

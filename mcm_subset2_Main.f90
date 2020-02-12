@@ -65,7 +65,7 @@ kron: DO WHILE (T < TEND)
         CALL Update_RCONST()
 
         CALL INTEGRATE( TIN = T, TOUT = T+DT, RSTATUS_U = RSTATE, &
-        ICNTRL_U = (/ 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 /) )
+        ICNTRL_U = (/ 0,0,0,100000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 /) )
         T = RSTATE(1)
 
       END DO kron
