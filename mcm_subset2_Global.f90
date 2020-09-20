@@ -44,7 +44,7 @@ MODULE mcm_subset2_Global
 ! TIME - Current integration time
   REAL(kind=dp) :: TIME=43200.0!=12*60*60
 ! SUN - Sunlight intensity between [0,1]
-  REAL(kind=dp) :: SUN=1.0
+  REAL(kind=dp) :: SUN=0.9150300858548575 ! cos(23.79deg)
 ! TEMP - Temperature
   REAL(kind=dp) :: TEMP=298.15
 ! RTOLS - (scalar) Relative tolerance
